@@ -2,15 +2,12 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>MK SHOP WEB</title>
+        <title>MK WORLD - Décoration Maison</title>
         <link rel="stylesheet" href="public/style.css">
-        <script src="public/script.js"></script>
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo MK WORLD">
-            </div>
+            <div class="logo">MK WORLD</div>
         
         <nav id="menu-container">
             <ul id="menu">
@@ -25,20 +22,28 @@
 
         <main>
 
-            <h1 style="text-align: center;">Welcome to MK SHOP</h1>
+            <h1 style="text-align: center;">Welcome to MK WORLD</h1>
+            <button id="button1" class="myButton">Ajouter au panier</button>
+        <button id="button2" class="myButton">Voir plus de produits</button>
+        <button id="button3" class="myButton">Contactez-nous</button>
+        <script src="script.js"></script>
+
             <section>
-                <h2>Votre univers de décoration</h2>
+                <h2>Idée de Décoration Moderne</h2>
                 <p>Explorez une vaste collection d'idées pour transformer votre maison en un espace qui vous ressemble.</p>
+                <div style="text-align: center;">
+                    <img src="salon black.jpg" alt="black deco" style="width: 800px;">
+                </div>
             </section>
     
             <section>
                 <h3>Nos catégories populaires :</h3>
                 <ul>
-                    <li>Meubles modernes</li>
-                    <li>Éclairages tendances</li>
-                    <li>Objets déco uniques</li>
+                    <li><a href="https://www.pickawood.com/" class="menu-item">Meubles modernes</a></li>
+                    <li><a href="https://www.sklum.com/" class="menu-item">Eclairages tendances</a></li>
+                    <li><a href="https://www.vente-unique.com/" class="menu-item">objets déco uniques</a></li>
                 </ul>
-                <img src="images/deco.jpg" alt="Décoration intérieure">
+
             </section>
             
         </main>
@@ -46,60 +51,50 @@
         <section>
             <h2>Comparatif des tendances</h2>
 
-<table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Style</th>
+                        <th>Couleurs populaires</th>
+                        <th>Prix moyen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Minimaliste</td>
+                        <td>Blanc, gris, beige</td>
+                        <td>300€</td>
+                    </tr>
+                    <tr>
+                        <td>Industriel</td>
+                        <td>Acier, noir, bois brut</td>
+                        <td>500€</td>
+                    </tr>
+                    <tr>
+                        <td>Scandinave</td>
+                        <td>Pastels, bois clair</td>
+                        <td>400€</td>
+                </tr>
 
-<thead>
+                </tbody>
 
-<tr>
-    <th>Style</th>
-    <th>Couleurs populaires</th>
-    <th>Prix moyen</th>
+            </table>
 
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-    <td>Minimaliste</td>
-    <td>Blanc, gris, beige</td>
-    <td>300€</td> 
-
-</tr>
-
-<tr>
-    <td>Industriel</td>
-    <td>Acier, noir, bois brut</td>
-    <td>500€</td>
-
-</tr>
-
-<tr>
-    <td>Scandinave</td>
-    <td>Pastels, bois clair</td>
-    <td>400€</td>
-
-    </tr>
-
-    </tbody>
-    </table>
     </section>
     
         <section>
-            <h2>Inspirez-vous avec nos vidéos</h2>
-            <video controls width="600">
-                <source src="videos/inspiration.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la lecture vidéo.
-            </video>
+            <h2 style="text-align: center;"> Inspirez-vous avec nos vidéos</h2>
+            <div style="text-align: center;">
+                <video autoplay muted controls width="600">
+                    <source src="deco.mp4" type="video/mp4"> 
+                </video>
+            </div>
         </section>
 
         <footer class="footer-container">
             <footer>
-                <p>© 2024 MK WORLD. Tous droits réservés.</p>
                 <p>Suivez-nous sur : 
-                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Pinterest</a>
+                <a href="https://www.facebook.com/">Facebook</a> | <a href="https://www.instagram.com/">Instagram</a> | <a href="https://fr.pinterest.com/">Pinterest</a>
                 </p>
 
         </footer>

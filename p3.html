@@ -1,13 +1,64 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="stylep3.css">
-  <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>Contactez-nous - MK WORLD</title>
+    <link rel="stylesheet" href="stylep3.css">
+
 </head>
 <body>
-    <h1>Page n°3 </h1>
+<header>
+    <h1>Contactez-nous - MK WORLD</h1>
+    <nav>
+        <ul>
+        <a href="./index.html" class="menu-item"><li>Accueil</li></a> 
+        <a href="./p1.html" class="menu-item"><li>Catégories</li></a> 
+        <a href="./p2.html" class="menu-item"><li>Nouveautés</li></a> 
+        <a href="./p3.html" class="menu-item"><li>Contact</li></a> 
+        <a href="./p4.html" class="menu-item"><li>Aide</li></a> 
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contact-intro">
+        <h2>Entrons en contact</h2>
+        <p>Pour toute question ou suggestion, n'hésitez pas à nous écrire. Nous serons ravis de vous aider !</p>
+    </section>
+
+    <section class="contact-details">
+        <h3>Nos coordonnées</h3>
+        <p><strong>Adresse :</strong>6/8 Rue Pouchet, 75017 Paris, France</p>
+        <p><strong>Téléphone :</strong> +33 1 22 36 68 52</p>
+        <p><strong>Email :</strong>contact@mkworld.com</p>
+    </section>
+
+    <section class="contact-form">
+        <h3>Envoyez-nous un message</h3>
+        <form action="process_contact" method="post">
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email"                                                                                                                                                                                               name="email" placeholder="Votre email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 MK WORLD - Tous droits réservés</p>
+</footer>
 
 </body>
 </html>
